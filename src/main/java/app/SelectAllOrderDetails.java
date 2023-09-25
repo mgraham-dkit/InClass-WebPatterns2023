@@ -58,25 +58,28 @@ public class SelectAllOrderDetails {
             // Connection
 
             try {
+                // Check that the result set exists - if it does then close it
                 if(rs != null) {
                     rs.close();
                 }
             } catch (SQLException e) {
-                throw new RuntimeException(e);
+                System.err.println("An SQLException occurred while closing the result set: " + e.getMessage());
             }
             try {
+                // Check that the prepared statement exists - if it does then close it
                 if(ps != null) {
                     ps.close();
                 }
             } catch (SQLException e) {
-                throw new RuntimeException(e);
+                System.err.println("An SQLException occurred while closing the prepared statement: " + e.getMessage());
             }
             try {
+                // Check that the connection exists - if it does then close it
                 if(conn != null) {
                     conn.close();
                 }
             } catch (SQLException e) {
-                throw new RuntimeException(e);
+                System.err.println("An SQLException occurred while closing the connection: " + e.getMessage());
             }
         }
 
