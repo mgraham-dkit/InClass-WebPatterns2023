@@ -1,8 +1,9 @@
-package business;
+package BasicJDBCExamples.business;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class OrderDetail {
+public class OrderDetail implements Serializable {
     private int orderNumber;
     private String productCode;
     private int quantityOrdered;

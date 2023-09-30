@@ -1,6 +1,6 @@
-package app;
+package BasicJDBCExamples.app;
 
-import business.OrderDetail;
+import BasicJDBCExamples.business.OrderDetail;
 
 import java.sql.*;
 import java.util.ArrayList;
