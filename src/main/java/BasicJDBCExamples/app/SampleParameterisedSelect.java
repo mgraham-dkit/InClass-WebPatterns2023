@@ -1,6 +1,7 @@
 package BasicJDBCExamples.app;
 
-import business.Customer;
+
+import BasicJDBCExamples.business.Customer;
 
 import java.sql.*;
 import java.util.ArrayList;
