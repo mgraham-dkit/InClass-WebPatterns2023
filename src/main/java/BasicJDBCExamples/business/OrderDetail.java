@@ -84,4 +84,7 @@ public class OrderDetail implements Serializable {
                 ", orderLineNumber=" + orderLineNumber +
                 '}';
     }
+
+    public void display(){
+        System.out.println(this.toString());
 }
